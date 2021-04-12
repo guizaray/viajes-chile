@@ -2,11 +2,11 @@
 <html lang="es" dir="ltr">
     <head>
         <title>Viajes Chile</title>
-        <meta name="web name" content="Ricomida">
+        <meta name="web name" content="Viajes Chile">
         <meta name="autors name" content="Javier Guiza Aray">
         <meta name="description" content="Agencia de viajes y turismo">
         <meta name="keywords" content="viajes, turismo, paisajes">
-        <link rel="icon" href="assets/img/viajes.svg">
+        <link rel="icon" href="assets/img/logo-tab.svg">
         <!--Etiqueta de lectura de caracteres especiales -->
         <meta charset="utf-8">
         <!-- Etiqueta que controla el dimensionamiento de la pantalla y adpatación a movil -->
@@ -18,7 +18,7 @@
         crossorigin="anonymous">
         <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/fb55a2f725.js" crossorigin="anonymous"></script>
         <!--My CCS-->
@@ -28,8 +28,96 @@
         <!--My JS-->
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
-    
+
     <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top px-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="nav-logo ml-2" src="assets/img/logo-viajes.svg"
+                    alt="Logo Viajes Chile" style="width: 220px">
+                </a>
+                
+                <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-3">
+                            <a class="nav-link text-white" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <a class="nav-link text-white" href="#">Quienes Somos</a>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <a class="nav-link text-white" href="#">Destacados</a>
+                        </li>
+
+                        <li class="nav-item ml-3">
+                            <a class="nav-link text-white" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Carousel Section-->
+        <div id="fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100"
+                         alt="La Cordillera de los Andes" style="height: 700px;">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-title">LA CORDILLERA DE LOS ANDES</h5>
+                            <p class="carousel-subtitle">Una de las cadenas de montañas más extensas del mundo.</p>
+                        </div>
+                </div>
+
+                <div class="carousel-item" data-interval="2000">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" 
+                        alt="Isla de Pascua" style="height: 700px;">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ISLA DE PASCUA / RAPA NUI</h5>
+                            <p>Descubre todo lo que hay para experimentar en Hangaroa.</p>
+                        </div>
+                </div>
+
+                <div class="carousel-item" data-interval="2000">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100"
+                        alt="Pingüino de Humboldt" style="height: 700px;">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RESERVA NACIONAL PINGÜINO DE HUMBOLDT</h5>
+                            <p>¡Tour Ecologico! para la concientización y conservación de la especie.</p>
+                        </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#fade-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#fade-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
         <!--BOOTSTRAP PLUGGINS-->
         <!--JQuery 3.5.1 sin slim-->
         <script src='https://code.jquery.com/jquery-3.6.0.min.js'
