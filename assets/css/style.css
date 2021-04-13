@@ -71,7 +71,7 @@ p, .row {
     font-size: 22pt;}
 }
 
-/*Card Section*/
+/*Featured Section*/
 
 h5 {
     font-family: 'Montserrat', sans-serif;
@@ -82,4 +82,13 @@ h5 {
 .card-title {
     color: white;
     text-shadow: 3px 3px 5px #000000;
+}
+
+/*Footer Section*/
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
 }

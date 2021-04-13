@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    /*Tooltip Event*/
+        $('[data-toggle="tooltip"]').tooltip()
+
     /*Card Section: Toggle Event*/
         /*Toggle Event Card 01*/
         $(".textToggledone").hide();
