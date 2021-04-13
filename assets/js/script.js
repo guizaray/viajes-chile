@@ -1,10 +1,39 @@
 $(document).ready(function() {
 
-    /*Tooltip Event*/
+    var scrollLink = $('.scroll');
+  
+    // Smooth Scrolling
+        scrollLink.click(function(e) {
+        e.preventDefault();
+        $('body,html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000 );
+        });
+    
+    // Navbar Section: Active Nav-Link
+        $(window).scroll(function() {
+
+            var scrollbarLocation = $(this).scrollTop();
+        
+            scrollLink.each(function() {
+                var sectionOffset = $(this.hash).offset().top - 20;
+
+                if ( sectionOffset <= scrollbarLocation ) {
+                    $(this).parent().addClass('active');
+                    $(this).parent().siblings().removeClass('active');
+                }
+            });
+
+            // Navbar Section: Transparent Navbar to Color
+            $("#navbar").toggleClass('scrolled', $(this).scrollTop() > $('#about').height());
+
+        });
+
+    // About Section: Tooltip Event
         $('[data-toggle="tooltip"]').tooltip()
 
-    /*Card Section: Toggle Event*/
-        /*Toggle Event Card 01*/
+    // Card Section: Toggle Event
+        // Toggle Event Card 01
         $(".textToggledone").hide();
         $("#buttonToggleone").click(function() {
             var elem = $("#buttonToggleone").text();
@@ -17,7 +46,7 @@ $(document).ready(function() {
             }
         });
 
-        /*Toggle Event Card 02*/
+        // Toggle Event Card 02
         $(".textToggledtwo").hide();
         $("#buttonToggletwo").click(function() {
             var elem = $("#buttonToggletwo").text();
@@ -30,7 +59,7 @@ $(document).ready(function() {
             }
         });
 
-        /*Toggle Event Card 03*/
+        // Toggle Event Card 03
         $(".textToggledthree").hide();
         $("#buttonTogglethree").click(function() {
             var elem = $("#buttonTogglethree").text();
@@ -43,7 +72,7 @@ $(document).ready(function() {
             }
         });
 
-        /*Toggle Event Card 04*/
+        // Toggle Event Card 04
         $(".textToggledfour").hide();
         $("#buttonTogglefour").click(function() {
             var elem = $("#buttonTogglefour").text();

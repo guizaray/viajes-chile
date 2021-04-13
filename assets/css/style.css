@@ -19,6 +19,13 @@ hr {
     border-color: #5bc0de;
 }
 
+/*Navbar Section*/
+
+#navbar.scrolled {
+    background-color: #5bc0de !important;
+    transition: background-color 200ms linear;
+}
+
 /*Carousel Section*/
 
 .carousel-title {
@@ -49,9 +56,14 @@ p, .row {
     text-align: justify;
 }
 
+.tooltip-inner {
+    background-color: #373A3C;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 600px) {
 .text-sm {
-    font-size: 14px;
+    font-size: 14.5px;
     line-height: 24px;}
 }
     

@@ -31,11 +31,18 @@
 
     <body>
 <!------Navbar-->
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top px-4">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top px-4">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <!--Logo LG-->
+                <a class="navbar-brand d-none d-lg-block" href="index.html">
                     <img class="nav-logo ml-2" src="assets/img/logo-viajes.svg"
                     alt="Logo Viajes Chile" style="width: 220px">
+                </a>
+                
+                <!--Logo SM-->
+                <a class="navbar-brand d-block d-md-none" href="index.html">
+                    <img class="nav-logo ml-2" src="assets/img/logo-viajes.svg"
+                    alt="Logo Viajes Chile" style="width: 180px">
                 </a>
                 
                 <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,20 +51,20 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-3">
-                            <a class="nav-link text-white" href="#fade-carousel">Inicio</a>
+                        <li class="nav-item active ml-3">
+                            <a class="nav-link scroll" href="#fade-carousel">Inicio</a>
                         </li>
 
                         <li class="nav-item ml-3">
-                            <a class="nav-link text-white" href="#about">Quienes Somos</a>
+                            <a class="nav-link scroll" href="#about">Quienes Somos</a>
                         </li>
 
                         <li class="nav-item ml-3">
-                            <a class="nav-link text-white" href="#featured">Destacados</a>
+                            <a class="nav-link scroll" href="#featured">Destacados</a>
                         </li>
 
                         <li class="nav-item ml-3">
-                            <a class="nav-link text-white" href="#contact">Contacto</a>
+                            <a class="nav-link scroll" href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +72,7 @@
         </nav>
 
 <!------Carousel Section-->
-        <div id="fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="fade-carousel" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
             <div class="carousel-inner">
                 <!--Carousel Img 01-->
                 <div class="carousel-item active" data-interval="2000">
@@ -194,35 +201,35 @@
         </section>
 
 <!------Featured Section-->
-        <section id="featured" class="container-fluid justify-content-center pt-2 pb-5" style="width: 90%">
+        <section id="featured" class="container-fluid pt-2 pb-5" style="width: 90%">
 
             <h2 class="text-white text-center title-lg pt-4 pb-1">Destacados</h2>
 
             <hr>
 
-            <div class="row text-center">
+            <div class="row justify-content-center text-center mb-2">
                 <!--Card 01-->
-                <div class="col-12 col-lg-3 mb-1 py-3">
+                <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card1.jpg" class="card-img-top"
-                            alt="Reserva nacional Siete Tazas" style="height: 150px;">
-
+                        alt="Reserva nacional Siete Tazas" style="height: 150px;">
+                        
                         <div class="card-body">
-                            <h5 class="card-title">Reserva nacional Siete Tazas</h5>
-
-                            <!--Toggle Event Card 01-->
-                            <p class="textToggledone">
-                                Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
-                                blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
-                            </p>
-
-                            <a id="buttonToggleone" class="btn btn-dark btn-sm">Ver más</a>
+                        <h5 class="card-title">Reserva nacional Siete Tazas</h5>
+            
+                        <!--Toggle Event Card 01-->
+                        <p class="textToggledone text-sm">
+                            Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
+                            blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
+                        </p>
+            
+                        <a id="buttonToggleone" class="btn btn-dark btn-sm">Ver más</a>
                         </div>
                     </div>
                 </div>
 
                 <!--Card 02-->
-                <div class="col-12 col-lg-3 mb-1 py-3">
+                <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card2.jpg" class="card-img-top"
                             alt="Cañon del arroyo Pedregoso" style="height: 150px;">
@@ -231,7 +238,7 @@
                             <h5 class="card-title font-weight-bold">Cañon del arroyo Pedregoso</h5>
 
                             <!--Toggle Event Card 02-->
-                            <p class="textToggledtwo">
+                            <p class="textToggledtwo text-sm">
                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
                                 blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
                             </p>
@@ -242,7 +249,7 @@
                 </div>
 
                 <!--Card 03-->
-                <div class="col-12 col-lg-3 mb-1 py-3">
+                <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card3.jpg" class="card-img-top"
                             alt="Gran desierto de Atacama" style="height: 150px;">
@@ -251,7 +258,7 @@
                             <h5 class="card-title font-weight-bold">Gran desierto de Atacama</h5>
 
                             <!--Toggle Event Card 03-->
-                            <p class="textToggledthree">
+                            <p class="textToggledthree text-sm">
                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
                                 blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
                             </p>
@@ -262,7 +269,7 @@
                 </div>
 
                 <!--Card 04-->
-                <div class="col-12 col-lg-3 mb-1 py-3">
+                <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card4.jpg" class="card-img-top"
                             alt="Lluviosa selva Valdiviana" style="height: 150px;">
@@ -271,7 +278,7 @@
                             <h5 class="card-title font-weight-bold">Lluviosa selva Valdiviana</h5>
 
                             <!--Toggle Event Card 04-->
-                            <p class="textToggledfour">
+                            <p class="textToggledfour text-sm">
                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
                                 blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
                             </p>
@@ -289,7 +296,7 @@
             <h2 class="text-white text-center title-lg pt-4 pb-1">Contacto</h2>
 
             <hr>
-
+            
             <div class="typeform">
                 <div class="typeform-widget" 
                     data-url="https://form.typeform.com/to/eeKAxWFY?typeform-medium=embed-snippet" 
@@ -321,7 +328,7 @@
                         </p>
                     </div>
 
-                    <div class="col-12 col-lg-6 text-white text-center pt-1">
+                    <div class="col-12 col-lg-6 text-white text-center pt-1 pb-4">
                         <a href="https://github.com/" target="_blank">
                             <i class="fab fa-github-square fa-2x text-white px-2"></i>
                         </a>
