@@ -8,7 +8,7 @@ $(document).ready(function() {
         e.preventDefault();
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top
-        }, 1000 );
+        }, 1500 );
     });
     
     // Navbar Section: Active Nav-Link, 
@@ -88,4 +88,20 @@ $(document).ready(function() {
             $(".textToggledfour").slideUp();
         }
     });
+
+    // Función que muestra o esconde el boton flotante del Footer
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('.sticky-button-top').fadeIn(300);
+        } else {
+            $('.sticky-button-top').fadeOut(300);
+        }
+    });
+    
+    // Función que anima el scroll hacia el inicio
+    $('.sticky-button-top').click(function(event) {
+        event.preventDefault();
+        
+        $('html, body').animate({scrollTop: 0}, 1000);
+    })
 });
