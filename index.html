@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
     <head>
+        <!-- Etiquetas con la información sobre la página para navegadores -->
         <title>Viajes Chile</title>
         <meta name="web name" content="Viajes Chile">
         <meta name="autors name" content="Javier Guiza Aray">
         <meta name="description" content="Agencia de viajes y turismo">
         <meta name="keywords" content="viajes, turismo, paisajes">
         <link rel="icon" href="assets/img/logo-tab.svg">
-        <!--Etiqueta de lectura de caracteres especiales -->
+        <!-- Etiqueta de lectura de caracteres especiales -->
         <meta charset="utf-8">
         <!-- Etiqueta que controla el dimensionamiento de la pantalla y adpatación a movil -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--CCS de Bootstrap 4.6-->
+        <!-- CCS de Bootstrap 4.6 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
         crossorigin="anonymous">
-        <!--Google Fonts-->
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-        <!--Font Awesome-->
+        <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/fb55a2f725.js" crossorigin="anonymous"></script>
-        <!--My CCS-->
+        <!-- My CCS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!--My JS-->
+        <!-- My JS -->
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
 
     <body>
-<!------Navbar-->
+<!----- Navbar -->
+<!----- Comienzo de la barra de navegación -->
         <nav id="navbar" class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top px-4">
             <div class="container">
-                <!--Logo LG-->
+                <!-- Logo LG -->
+                <!-- Esta solo aparece en pantallas grandes como forma de control mas exacta -->
                 <a class="navbar-brand d-none d-lg-block" href="index.html">
                     <img class="nav-logo ml-2" src="assets/img/logo-viajes.svg"
-                    alt="Logo Viajes Chile" style="width: 220px">
+                        alt="Logo Viajes Chile" style="width: 220px">
                 </a>
                 
-                <!--Logo SM-->
+                <!-- Logo SM -->
+                <!-- Esta solo aparece en pantallas pequeñas como forma de control mas exacta -->
                 <a class="navbar-brand d-block d-md-none" href="index.html">
                     <img class="nav-logo ml-2" src="assets/img/logo-viajes.svg"
-                    alt="Logo Viajes Chile" style="width: 180px">
+                        alt="Logo Viajes Chile" style="width: 180px">
                 </a>
                 
                 <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Estos son los items de la barra de navegación con sus links a secciones agregadas -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ml-3">
@@ -70,15 +75,19 @@
                 </div>
             </div>
         </nav>
+<!----- Cierre de la Barra de Navegación -->
 
-<!------Carousel Section-->
-        <div id="fade-carousel" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
+
+<!----- Carousel Section -->
+<!----- Comienzo de la sección del carrusel -->
+        <div id="fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                <!--Carousel Img 01-->
-                <div class="carousel-item active" data-interval="2000">
+                <!-- Carousel Img 01 -->
+                <div class="carousel-item active" data-interval="3000">
                     <img src="assets/img/carousel1.jpg" class="d-block w-100"
                         alt="La Cordillera de los Andes" style="height: 700px;">
                     
+                    <!-- Información sobre la imagen y el destino -->
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="carousel-title pb-0 mb-0">
                             LA CORDILLERA DE LOS ANDES
@@ -89,11 +98,12 @@
                         </p>
                     </div>
                 </div>
-                <!--Carousel Img 02-->
-                <div class="carousel-item" data-interval="2000">
+                <!-- Carousel Img 02 -->
+                <div class="carousel-item" data-interval="3000">
                     <img src="assets/img/carousel2.jpg" class="d-block w-100" 
                         alt="Isla de Pascua" style="height: 700px;">
 
+                    <!-- Información sobre la imagen y el destino -->
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="carousel-title pb-0 mb-0">
                             ISLA DE PASCUA - RAPA NUI
@@ -104,11 +114,12 @@
                         </p>
                     </div>
                 </div>
-                <!--Carousel Img 03-->
-                <div class="carousel-item" data-interval="2000">
+                <!-- Carousel Img 03 -->
+                <div class="carousel-item" data-interval="3000">
                     <img src="assets/img/carousel3.jpg" class="d-block w-100"
                         alt="Pingüino de Humboldt" style="height: 700px;">
 
+                    <!-- Información sobre la imagen y el destino -->
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="carousel-title pb-0 mb-0">
                             RESERVA NACIONAL PINGÜINO DE HUMBOLDT
@@ -121,30 +132,36 @@
                 </div>
             </div>
 
-            <!--Buttons Prev/Next-->
+            <!-- Buttons Prev/Next -->
+            <!-- Acá están los botones del carrusel-->
             <a class="carousel-control-prev" href="#fade-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
 
             <a class="carousel-control-next" href="#fade-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
         </div>
+<!----- Cierre de la sección Carousel -->
 
-<!------About Section-->
-        <section id="about" class="container-fluid inline-block justify-content-center pt-4 pb-5" style="width: 90%">
+
+<!----- About Section -->
+<!----- Comienzo de la sección de información sobre la agencia de viajes -->
+        <section id="about" class="container-fluid inline-block justify-content-center d-none d-lg-block pt-4 pb-5"
+                 style="width: 90%">
 
             <h2 class="text-white text-center title-lg pt-4 pb-1">¿Quienes somos?</h2>
 
             <hr>
 
-            <!--About 01-->
+            <!-- About 01 -->
             <div class="row text-white text-center pt-3">
                 <div class="col-12 col-lg-4">
                     <div class="py-2 justify-content-center" style="background-color:#5bc0de;">
-                        <!--Tooltip Event-->
+                        <!-- Tooltip Event -->
+                        <!-- Acá es donde se crea la conexión para el Tooltip -->
                         <i class="fas fa-plane fa-2x" data-toggle="tooltip"
                            data-placement="top" title="Las mejores aerolineas">
                         </i>
@@ -156,7 +173,8 @@
                     </p>
                 </div>
 
-                <!--About 02 LG-->
+                <!-- About 02 LG -->
+                <!-- Este about solo aparece en pantallas grandes para seguir la disposición de la maqueta -->
                 <div class="col-12 col-lg-4 d-none d-lg-block">
                     <p class="text-sm pb-1">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nam eveniet repellat inventore tempora eius repudiandae maxime, doloremque aliquid nulla. Laborum numquam possimus similique odit, modi consequuntur nam fugit eos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, est. Sint, quibusdam voluptatem vel incidunt voluptas 
@@ -164,16 +182,20 @@
                     </p>
 
                     <div class="py-2 justify-content-center" style="background-color:#5bc0de;">
-                        <!--Tooltip Event-->
+                        <!-- Tooltip Event -->
+                        <!-- Acá es donde se crea la conexión para el Tooltip -->
                         <i class="fas fa-images fa-2x" data-toggle="tooltip"
-                        data-placement="bottom" title="Las mejores fotografías">
-                     </i>
+                            data-placement="bottom" title="Las mejores fotografías">
+                        </i>
                     </div>
                 </div>
 
-                <!--About 02 SM-->
+                <!-- About 02 SM -->
+                <!-- Este about solo aparece en pantallas pequeñas para mejorar/cambiar la disposición en ellos -->
                 <div class="col-12 col-lg-4 d-block d-md-none">
                     <div class="py-2 justify-content-center" style="background-color:#5bc0de;">
+                        <!-- Tooltip Event -->
+                        <!-- Acá es donde se crea la conexión para el Tooltip -->
                         <i class="fas fa-images fa-2x"></i>
                     </div>
                     
@@ -183,13 +205,14 @@
                     </p> 
                 </div>
 
-                <!--About 03-->
+                <!-- About 03 -->
                 <div class="col-12 col-lg-4">
                     <div class="py-2 justify-content-center" style="background-color:#5bc0de;">
-                        <!--Tooltip Event-->
+                        <!-- Tooltip Event -->
+                        <!-- Acá es donde se crea la conexión para el Tooltip -->
                         <i class="fas fa-map-marked-alt fa-2x" data-toggle="tooltip"
-                        data-placement="top" title="Las mejores locaciones">
-                     </i>
+                            data-placement="top" title="Las mejores locaciones">
+                        </i>
                     </div>
 
                     <p class="text-sm pt-3 pb-2">
@@ -199,8 +222,11 @@
                 </div>
             </div>
         </section>
+<!----- Cierre de la sección About -->
 
-<!------Featured Section-->
+
+<!----- Featured Section -->
+<!----- Comienzo de la sección donde aparecen los cards -->
         <section id="featured" class="container-fluid pt-2 pb-5" style="width: 90%">
 
             <h2 class="text-white text-center title-lg pt-4 pb-1">Destacados</h2>
@@ -208,27 +234,28 @@
             <hr>
 
             <div class="row justify-content-center text-center mb-2">
-                <!--Card 01-->
+                <!-- Card 01 -->
                 <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card1.jpg" class="card-img-top"
-                        alt="Reserva nacional Siete Tazas" style="height: 150px;">
+                            alt="Reserva nacional Siete Tazas" style="height: 150px;">
                         
                         <div class="card-body">
-                        <h5 class="card-title">Reserva nacional Siete Tazas</h5>
-            
-                        <!--Toggle Event Card 01-->
-                        <p class="textToggledone text-sm">
-                            Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
-                            blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
-                        </p>
-            
-                        <a id="buttonToggleone" class="btn btn-dark btn-sm">Ver más</a>
+                            <h5 class="card-title">Reserva nacional Siete Tazas</h5>
+                
+                            <!-- Toggle Event Card 01 -->
+                            <!-- Acá es donde se crea la conexión para el Toggle Event -->
+                            <p class="textToggledone text-sm">
+                                Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
+                                blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
+                            </p>
+                
+                            <a id="buttonToggleone" class="btn btn-dark btn-sm">Ver más</a>
                         </div>
                     </div>
                 </div>
 
-                <!--Card 02-->
+                <!-- Card 02 -->
                 <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card2.jpg" class="card-img-top"
@@ -237,7 +264,8 @@
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Cañon del arroyo Pedregoso</h5>
 
-                            <!--Toggle Event Card 02-->
+                            <!-- Toggle Event Card 02 -->
+                            <!-- Acá es donde se crea la conexión para el Toggle Event -->
                             <p class="textToggledtwo text-sm">
                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
                                 blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
@@ -248,7 +276,7 @@
                     </div>
                 </div>
 
-                <!--Card 03-->
+                <!-- Card 03 -->
                 <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card3.jpg" class="card-img-top"
@@ -257,7 +285,8 @@
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Gran desierto de Atacama</h5>
 
-                            <!--Toggle Event Card 03-->
+                            <!-- Toggle Event Card 03 -->
+                            <!-- Acá es donde se crea la conexión para el Toggle Event -->
                             <p class="textToggledthree text-sm">
                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
                                 blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
@@ -268,7 +297,7 @@
                     </div>
                 </div>
 
-                <!--Card 04-->
+                <!-- Card 04 -->
                 <div class="col-mg-3 mx-3 my-3">
                     <div class="card bg-info text-white" style="width: 16.5rem">
                         <img src="assets/img/card4.jpg" class="card-img-top"
@@ -277,7 +306,8 @@
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Lluviosa selva Valdiviana</h5>
 
-                            <!--Toggle Event Card 04-->
+                            <!-- Toggle Event Card 04 -->
+                            <!-- Acá es donde se crea la conexión para el Toggle Event -->
                             <p class="textToggledfour text-sm">
                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra,
                                 blandit erat luctus, ut nunc magnis est vulputate nostra, blandit erat luctus.
@@ -289,8 +319,11 @@
                 </div>
             </div>
         </section>
+<!----- Cierre de la sección Featured -->
 
-<!------Typeform Section-->
+
+<!----- Typeform Section -->
+<!----- Comienzo de la sección donde se inscrutó el Typeform -->
         <div id="contact" class="container-fluid justify-cotent-center pt-3 pb-5" style="width: 90%">
 
             <h2 class="text-white text-center title-lg pt-4 pb-1">Contacto</h2>
@@ -303,6 +336,7 @@
                     style="width: 100%; height: 500px;">
                 </div>
                 
+                <!-- Este el código generado por Typeform-->
                 <script>
                     (function() { 
                         var qs,js,q,s,d=document,
@@ -317,8 +351,11 @@
                 </script>
             </div>
         </div>
+<!----- Cierre de la sección Typeform -->
 
-<!------Footer Section-->
+
+<!----- Footer Section -->
+<!----- Comienzo del Footer donde aparecen los links a redes sociales y el nombre de la web -->
         <footer id="footer" class="bg-info">
             <div class="container">
                 <div class="row pt-4">
@@ -328,6 +365,7 @@
                         </p>
                     </div>
 
+                    <!-- Iconos de redes y links-->
                     <div class="col-12 col-lg-6 text-white text-center pt-1 pb-4">
                         <a href="https://github.com/" target="_blank">
                             <i class="fab fa-github-square fa-2x text-white px-2"></i>
@@ -348,19 +386,21 @@
                 </div>
             </div>
         </footer>
+<!----- Cierre del Footer -->
+
 
         <!--BOOTSTRAP PLUGGINS-->
         <!--JQuery 3.5.1 sin slim-->
         <script src='https://code.jquery.com/jquery-3.6.0.min.js'
-        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
-        crossorigin='anonymous'></script>
+            integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+            crossorigin='anonymous'></script>
         <!--Popper Js 1.16.1-->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
         <!--Bootstrap Js 4.6.0-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
     </body>
 </html>
