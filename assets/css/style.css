@@ -104,11 +104,29 @@ h5 {
 }
 
 /*Footer Section*/
-/*Estilos para el texto del Footer*/
+/*Estilos para el texto y el button flotante en el Footer*/
 
 .footer-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 30px;
     text-align: center;
+}
+
+.sticky-button-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #373A3C;
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.sticky-button-top:hover {
+    color: #ffffff;
+	background-color: #5bc0de;
+    text-decoration: none;
 }
